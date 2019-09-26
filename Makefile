@@ -1,4 +1,5 @@
 WALL = -Wall
+PTHREAD = -lpthread
 SRC = .
 OBJ = ./obj
 BIN = ./bin
@@ -16,7 +17,7 @@ mul_process_s: $(OBJECT_P)
 	gcc $^ -o $(SERVER_P) $(WALL)
 
 mul_thread_s: $(OBJECT_T)
-	gcc $^ -o $(SERVER_T) $(WALL)
+	gcc $^ -o $(SERVER_T) $(WALL) $(PTHREAD)
 
 $(OBJECT_P): $(SERVER_HEADER_P)
 $(OBJECT_T): $(SERVER_HEADER_T)

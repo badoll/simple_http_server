@@ -36,7 +36,10 @@ main(int ac, char** av)
             }
             handle_error(-1,"accept() error");
         }
-        pthread_create(&t_id,NULL,(void*)thread_init,(void*)&cnet_sock);
+        if (pthread_create(&t_id,NULL,(void*)thread_init,(void*)&cnet_sock) != 0)
+        {
+            handle_error(-1,"pthread_create() error");
+        }
         pthread_detach(t_id);
     }
     close(ctrl_sock);
