@@ -43,11 +43,13 @@ static char binary_type[BINARY_TYPE_NUM][TYPE_LEN] =
     "ico"
 };
 
+/*
 static char post_format[POST_FORMAT_NUM][TYPE_LEN] = 
 {
     "application/x-www-form-urlencoded",
     "multipart/form-data"
 };
+*/
 
 void wait_process();
 

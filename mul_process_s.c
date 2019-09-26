@@ -1,7 +1,7 @@
 /*
  * multiprocess server
  */
-#include "server.h"
+#include "mul_process_s.h"
 #include "server_func.h"
 int
 main(int ac, char** av)

@@ -37,5 +37,4 @@ void handle_error(int retr, char* msg);
 
 int istimeout(time_t keep_alive_t);
 
-
 #endif
