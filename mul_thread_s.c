@@ -41,6 +41,7 @@ main(int ac, char** av)
             handle_error(-1,"pthread_create() error");
         }
         pthread_detach(t_id);
+
     }
     close(ctrl_sock);
 }

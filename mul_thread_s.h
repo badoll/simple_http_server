@@ -4,6 +4,8 @@
 #include "server.h"
 #include "server_func.h"
 #include <pthread.h>
+#include <sys/event.h>
+
 
 #define CLIENT_CNT 8
 
